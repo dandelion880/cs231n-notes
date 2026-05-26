@@ -10,5 +10,3 @@ __pycache__/
 *.pt
 *.pth
 *.ckpt
-
-.DS_Store
