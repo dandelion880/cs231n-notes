@@ -8,10 +8,11 @@
 
 ```text
 .
-├── lec_1.ipynb          # Lecture 1 笔记
-├── lec_2.ipynb          # Lecture 2 笔记
-├── lec_3.ipynb          # Lecture 3 笔记
+├── lec_1.ipynb          
+├── lec_2.ipynb          
+├── lec_3.ipynb
+├── lec_4.ipynb
+├── lec_5.ipynb          
 ├── class_images/        # 笔记中使用的图片
-├── dataset/             # 本地数据集，不上传到 GitHub
 ├── .gitignore
 └── README.md
