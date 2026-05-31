@@ -8,11 +8,12 @@
 
 ```text
 .
-├── lec_1.ipynb          
-├── lec_2.ipynb          
-├── lec_3.ipynb
-├── lec_4.ipynb
-├── lec_5.ipynb          
+├── lec_1.ipynb          # 导论
+├── lec_2.ipynb          # 线性分类器进行图像分类
+├── lec_3.ipynb          # 正则化与优化
+├── lec_4.ipynb          # 神经网络与反向传播
+├── lec_5.ipynb          # 基于CNN的图像分类
+├── lec_6.ipynb          # 训练CNN与CNN架构
 ├── class_images/        # 笔记中使用的图片
 ├── .gitignore
 └── README.md
