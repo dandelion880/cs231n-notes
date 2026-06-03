@@ -9,7 +9,7 @@ from pathlib import Path
 # 第一步，将输入图像划分为固定大小的patches
 class PatchEmbedding(nn.Module):
     def __init__(self, img_size = 32, 
-                 patch_size = 8, 
+                 patch_size = 4, 
                  in_channels = 3, 
                  embed_dim = 64
     ):
@@ -48,7 +48,8 @@ class TransformerBlock(nn.Module):
         self.attn = nn.MultiheadAttention(
             embed_dim = embed_dim, 
             num_heads = num_heads, 
-            dropout = dropout
+            dropout = dropout,
+            batch_first = True
         )
         self.norm2 = nn.LayerNorm(embed_dim)
 
@@ -81,7 +82,7 @@ class TransformerBlock(nn.Module):
 class TiniViT(nn.Module):
     def __init__(self,
                  img_size = 32,
-                 patch_size = 8,
+                 patch_size = 4,
                  in_channels = 3,
                  embed_dim = 64,
                  num_classes = 10,
@@ -229,7 +230,7 @@ def main():
 
     model = TiniViT(
         img_size=32,
-        patch_size=8,
+        patch_size=4,
         num_classes=10,
         embed_dim=64,
         depth=4,
@@ -238,9 +239,9 @@ def main():
     ).to(device)
 
     criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(model.parameters(), lr=0.001)
+    optimizer = optim.AdamW(model.parameters(), lr=3e-4, weight_decay=0.05)
 
-    num_epochs = 10
+    num_epochs = 30
 
     for epoch in range(num_epochs):
         train_loss, train_acc = train_one_epoch(

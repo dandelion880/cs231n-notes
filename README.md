@@ -16,6 +16,7 @@
 ├── lec_6.ipynb          # 训练CNN与CNN架构
 ├── lec_7.ipynb          # 循环神经网络
 ├── lec_8.ipynb          # 注意力机制与Transformer
+├── lec_9.ipynb          # 目标检测、语义分割、可视化和理解
 ├── class_images/        # 笔记中使用的图片
 ├── .gitignore
 └── README.md
