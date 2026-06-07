@@ -19,6 +19,7 @@
 ├── lec_9.ipynb          # 目标检测、语义分割、可视化和理解
 ├── lec_10.ipynb          # 视频理解
 ├── lec_11.ipynb          # 大规模分布式训练
+├── lec_12.ipynb          # 自监督学习
 ├── mini_projects/
     ├── tinyResNet.py
     ├── tinyViY.py
