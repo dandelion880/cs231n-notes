@@ -20,6 +20,8 @@
 ├── lec_10.ipynb          # 视频理解
 ├── lec_11.ipynb          # 大规模分布式训练
 ├── lec_12.ipynb          # 自监督学习
+├── lec_13.ipynb          # 生成模型（一）
+├── lec_14.ipynb          # 生成模型（二）
 ├── mini_projects/
     ├── tinyResNet.py
     ├── tinyViY.py
