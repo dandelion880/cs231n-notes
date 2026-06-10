@@ -22,6 +22,7 @@
 ├── lec_12.ipynb          # 自监督学习
 ├── lec_13.ipynb          # 生成模型（一）
 ├── lec_14.ipynb          # 生成模型（二）
+├── lec_15.ipynb          # 三维视觉
 ├── mini_projects/
     ├── tinyResNet.py
     ├── tinyViY.py
