@@ -23,6 +23,7 @@
 ├── lec_13.ipynb          # 生成模型（一）
 ├── lec_14.ipynb          # 生成模型（二）
 ├── lec_15.ipynb          # 三维视觉
+├── lec_16.ipynb          # 视觉与语言
 ├── mini_projects/
     ├── tinyResNet.py
     ├── tinyViY.py
